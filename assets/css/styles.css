@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	text-align: center;
+}
+
+p {margin: 0;}
+
+.page {
+	width: 60rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.spoiler {
+	width: 18.75rem;
+	min-height: 3.125rem;
+	margin-top: 1rem;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 3.125rem;
+	color: #fff;
+}
+
+.spoiler-button {
+	display: none;
+	width: inherit;
+	min-height: inherit;
+	padding: 0;
+	border: none;
+	color: #fff;
+	background: #444;
+}
+
+.spoiler-button--show {display: block;}
+
+.spoiler-button:hover {cursor: pointer;}
+
+.spoiler-content {background-color: #000;}
+
+.spoiler-content--hidden {display: none;}
