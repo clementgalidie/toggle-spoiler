@@ -1,16 +1,16 @@
 (function () {
 	"use strict";
 
-	var buttonShowSpoiler = document.querySelectorAll(".spoiler-button");
-
-	// Function to show spoilers.
-	var showSpoiler = function showSpoiler(spoiler) {
-		this.nextSibling.nextSibling.classList.remove("spoiler-content--hidden");
-		this.classList.remove("spoiler-button--show");
+	// Function to show the spoiler.
+	var toggleSpoilerVisibility = function (element) {
+	  element.addEventListener("click", function () {
+	    this.classList.remove("spoiler-button--show");
+	  });
 	}
-	
-	// When clicking on "spoiler button", call showSpoiler().
-	for (var i = 0; i < buttonShowSpoiler.length; i++) {
-		buttonShowSpoiler[i].addEventListener("click", showSpoiler);
-	};
+
+	// allSpoilerButton contains each button with the "spoiler-button" class inside an array.
+	var allSpoilerButton = Array.prototype.slice.call(document.querySelectorAll(".spoiler-button"));
+
+	// For each element inside allSpoilerButton, call toggleSpoilerVisibility function.
+	allSpoilerButton.forEach(toggleSpoilerVisibility);
 }()); 
