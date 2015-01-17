@@ -4,7 +4,7 @@
 	// Function to show the spoiler.
 	var toggleSpoilerVisibility = function (element) {
 	  element.addEventListener("click", function () {
-	    this.classList.remove("spoiler-button--show");
+	    this.nextElementSibling.classList.toggle("spoiler-content-show");
 	  });
 	}
 

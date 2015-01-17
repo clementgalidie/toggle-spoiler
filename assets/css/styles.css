@@ -17,21 +17,21 @@ p {margin: 0;}
 }
 
 .spoiler-button {
-  width: inherit;
-  min-height: inherit;
-  display: none;
   padding: 0;
   border: none;
-  color: #fff;
+  color: #01a6f6;
   text-align: center;
-  background: #444;
+  text-decoration: underline;
+  background: none;
 }
 
-.spoiler-button--show {
-  display: block;
-  position: absolute;
-  right: 0;
-  left: 0;
+.spoiler-button:hover {
+	cursor: pointer;
+	text-decoration: none;
 }
 
-.spoiler-button:hover {cursor: pointer;}
+.spoiler-button:focus {text-decoration: none;}
+
+.spoiler-content {display: none;}
+
+.spoiler-content-show {display: block;}
